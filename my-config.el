@@ -61,7 +61,7 @@
 		:underline nil 
 		:slant normal 
 		:weight normal
-		:height 140 	;; The value is in 1/10pt, so 100 will give you 10pt, etc.
+		:height 130 	;; The value is in 1/10pt, so 100 will give you 10pt, etc.
 		:width normal
 		:foundry "unknown" 
 		;;:family "DejaVu Sans"
@@ -152,5 +152,8 @@
 (setq auto-mode-alist
    (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
+
+;;Run rebar post save
+;;(add-hook 'after-save-hook 'my-rebar-here)
  
 (provide 'my-config)
