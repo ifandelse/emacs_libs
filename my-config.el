@@ -107,9 +107,9 @@
 (require 'pc-select) 					;; Make copy mouse selection work in the usual Mac/Windows way
 (transient-mark-mode t) 				;; highlight text selection
 (delete-selection-mode t) 				;; delete seleted text when typing
-;;(cua-mode t) 							;; windows style keybind C-x, C-v, cut paste
+(cua-mode t) 							;; windows style keybind C-x, C-v, cut paste
 ;;(setq cua-auto-tabify-rectangles nil) 	;; Don't tabify after rectangle commands
-;;(setq cua-keep-region-after-copy t) 	;; Selection remains after C-c
+(setq cua-keep-region-after-copy t) 	;; Selection remains after C-c
 	 
 ;; ido provides a very nice auto-complete for finding files (type C-x f)
 ;; Learn more here: http://www.emacswiki.org/emacs/InteractivelyDoThings
@@ -157,3 +157,9 @@
 ;;(add-hook 'after-save-hook 'my-rebar-here)
  
 (provide 'my-config)
+
+;;COFFEE SCRIPT! AHAHAHA! I LOVE YOU
+(add-to-list 'load-path "~/emacs_libs/coffee-mode")
+(require 'coffee-mode)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
