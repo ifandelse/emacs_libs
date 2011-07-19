@@ -163,3 +163,10 @@
 (require 'coffee-mode)
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+
+(defun coffee-custom ()
+  "coffee-mode-hook"
+
+  (define-key coffee-mode-map (kbd "C-c r") 'coffee-compile-buffer))
+
+(add-hook 'coffee-mode-hook '(lambda () (coffee-custom)))
