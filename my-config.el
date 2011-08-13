@@ -38,14 +38,19 @@
 
 ;; color-theme (http://www.emacswiki.org/emacs/ColorTheme)
 (add-to-list 'load-path "~/emacs_libs/color-theme")
+(add-to-list 'load-path "~/emacs_libs/emacs-color-theme-solarized")
+
 (require 'color-theme)
+(require 'color-theme-solarized)
 	(color-theme-initialize)
 	;;	(color-theme-calm-forest)
 	;;	(color-theme-goldenrod)
 	;;	(color-theme-robin-hood)
 	;;	(color-theme-gnome2)
-	 	(color-theme-ld-dark)
 	;;  (color-theme-clarity)
+    ;;  (color-theme-ld-dark)
+    ;;  (color-theme-solarized-dark)
+    (color-theme-charcoal-black)
 
 ;; 	The value is in 1/10pt, so 100 will give you 10pt, etc.
 (custom-set-faces
