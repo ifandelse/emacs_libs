@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 [submodule "emacs-color-theme-solarized"]
 	path = emacs-color-theme-solarized
 	url = git://github.com/sellout/emacs-color-theme-solarized.git
+=======
 [submodule "coffee-module"]
 	path = coffee-module
 	url = git://github.com/defunkt/coffee-mode.git
+>>>>>>> c37ea24fbf0c7671455bef5f9ebdab5a38ecc011
