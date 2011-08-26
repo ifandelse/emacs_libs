@@ -156,12 +156,7 @@
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
    (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
-
-
-;;Run rebar post save
-;;(add-hook 'after-save-hook 'my-rebar-here)
  
-(provide 'my-config)
 
 ;;COFFEE SCRIPT! AHAHAHA! I LOVE YOU
 (add-to-list 'load-path "~/emacs_libs/coffee-mode")
@@ -175,3 +170,16 @@
   (define-key coffee-mode-map (kbd "C-c r") 'coffee-compile-buffer))
 
 (add-hook 'coffee-mode-hook '(lambda () (coffee-custom)))
+
+;;Jade Mode!
+(add-to-list 'load-path "~/emacs_libs/jade-mode")
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . sws-mode))
+
+;;LESS :D
+(autoload 'less-css-mode "less-css-mode.el"
+  "Major mode for LESS CSS" t)
+
+(provide 'my-config)
