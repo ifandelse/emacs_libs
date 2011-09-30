@@ -2,8 +2,8 @@
 
 ERL_CFLAGS  = -I/usr/local/lib/erlang/lib/erl_interface-3.7.4/include -I/usr/local/lib/erlang/usr/include
 ERL_LIB     = -L/usr/local/lib/erlang/lib/erl_interface-3.7.4/lib -lerl_interface -lei
-CFLAGS      = -g -O2 -Wall -m32
-LDFLAGS     =  -m32
+CFLAGS      = -g -O2 -Wall -m64
+LDFLAGS     =  -m64
 
 #CFLAGS=-Wall -I/usr/local/include ${ERL_CFLAGS}
 ERL_LDFLAGS= ${LDFLAGS} ${ERL_LIB}

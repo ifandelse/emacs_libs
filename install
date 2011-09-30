@@ -1,0 +1,8 @@
+cd wrangler/
+configure
+make
+sudo make install
+
+cd ..
+git submodule init
+git submodule update
