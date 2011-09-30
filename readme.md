@@ -22,6 +22,9 @@ parts of the config to function properly.  These include:
 - Erlang (I have R14B03)
 - Python 3
 
+Install Script
+-----------------------
+I have added a bash script to append the lines to your ~/.emacs file as well as pull down all the submodules and build wrangler. It makes this much simpler to use. Just pull down the repo and run install.sh. Ta-dow.
 
 How to use these files
 -----------------------
