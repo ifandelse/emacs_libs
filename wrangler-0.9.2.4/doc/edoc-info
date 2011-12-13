@@ -1,2 +1,0 @@
-{packages,[]}.
-{modules,[wrangler,wrangler_api,wrangler_code_inspector]}.

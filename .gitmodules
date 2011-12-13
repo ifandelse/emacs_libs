@@ -7,3 +7,6 @@
 [submodule "jade-mode"]
 	path = jade-mode
 	url = git://github.com/brianc/jade-mode.git
+[submodule "wrangler"]
+	path = wrangler
+	url = git://github.com/RefactoringTools/wrangler.git
