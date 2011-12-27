@@ -1,4 +1,4 @@
-cd wrangler-0.9.2.4
+cd wrangler
 ./configure
 make
 sudo make install

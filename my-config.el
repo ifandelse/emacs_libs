@@ -146,9 +146,9 @@
 (require 'magit)
 
 ;; Add Wrangler refactoring support
-(add-to-list 'load-path "/usr/local/share/wrangler/elisp")
+(add-to-list 'load-path "/Users/jcowart/emacs_libs/wrangler/elisp")
 (require 'wrangler)
-(load-file "/usr/local/share/wrangler/elisp/graphviz-dot-mode.el")
+(load-file "/Users/jcowart/emacs_libs/wrangler/elisp/graphviz-dot-mode.el")
 
 
 ;;Mark down mode 
